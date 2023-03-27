@@ -8,6 +8,7 @@ class ProjectSpringApplicationTests {
 
     @Test
     void contextLoads() {
+        assert true == true;
     }
 
 }

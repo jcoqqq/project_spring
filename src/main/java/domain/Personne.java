@@ -8,7 +8,6 @@ public class Personne {
 
     String prenom;
 
-    LocalDate dateDeNaissance;
 
     public String getNom() {
         return nom;
@@ -26,18 +25,9 @@ public class Personne {
         this.prenom = prenom;
     }
 
-    public LocalDate getDateDeNaissance() {
-        return dateDeNaissance;
-    }
-
-    public void setDateDeNaissance(LocalDate dateDeNaissance) {
-        this.dateDeNaissance = dateDeNaissance;
-    }
-
-    public Personne(String nom, String prenom, LocalDate dateDeNaissance) {
+    public Personne(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
-        this.dateDeNaissance = dateDeNaissance;
     }
 
     @Override
@@ -45,7 +35,6 @@ public class Personne {
         return "Personne{" +
                 "nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
-                ", dateDeNaissance=" + dateDeNaissance +
                 '}';
     }
 }
